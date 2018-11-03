@@ -1,0 +1,47 @@
+<!Doctype html>
+<html>
+	<head>
+		<title>Registrar Estudiante</title>
+	</head>
+	<body style="background-color: skyblue">
+		
+		<div style="width: 560px; margin: auto; padding: 10px; background-color: white;">
+
+			<h1>Registro Estudiante</h1>
+
+			<p>Codigo:</p>
+			<p><input type="text" name="codigo" id="codigo"></p>
+
+			<p>Nombre:</p>
+			<p><input type="text" name="nombre" id="nombre"></p>
+
+			<p>Nota:</p>
+			<p><input type="text" name="nota" id="nota"></p>
+
+			<br>
+			<p>
+			   <input type="submit" name="registrarEstudiante" id="registrarEstudiante" value="Registrar Estudiante">
+			   <input type="submit" name="mostrarPromedio" id="mostrarPromedio" value="Mostrar Promedio">
+			   <input type="submit" name="mostrarNotaMayor" id="mostrarNotaMayor" value="Mostrar Nota Mayor">
+			   <input type="submit" name="mostrarNotaMenor" id="mostrarNotaMenor" value="Mostrar Nota Menor">
+			</p>
+
+			<h1>Listado de Estudiantes</h1>
+
+			<table border="1px solid black" width="560px">
+				<thead>
+					<th>Codigo</th>
+					<th>Nombre</th>
+					<th>Nota</th>
+					<th>Editar</th>
+					<th>Eliminar</th>
+				</thead>
+				<tbody id="tbodyestudiantes" name="tbodyestudiantes">
+				</tbody>
+			</table>
+		</div>
+
+		<script type="text/javascript" src="./jquery.js"></script>
+		<script type="text/javascript" src="./estudiante.js"></script>
+	</body>
+</html>
